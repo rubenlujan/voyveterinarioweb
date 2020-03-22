@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VoyVeterinarioModelStoreContainer" CdmEntityContainer="VoyVeterinarioEntities">
+    <EntitySetMapping Name="Directorios">
+      <EntityTypeMapping TypeName="VoyVeterinarioModel.Directorio">
+        <MappingFragment StoreEntitySet="Directorio">
+          <ScalarProperty Name="InfoGeneral" ColumnName="InfoGeneral" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Colonia" ColumnName="Colonia" />
+          <ScalarProperty Name="DelMun" ColumnName="DelMun" />
+          <ScalarProperty Name="CP" ColumnName="CP" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Telefonos" ColumnName="Telefonos" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="RedesSociales" ColumnName="RedesSociales" />
+          <ScalarProperty Name="Foto" ColumnName="Foto" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="Urgencias" ColumnName="Urgencias" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

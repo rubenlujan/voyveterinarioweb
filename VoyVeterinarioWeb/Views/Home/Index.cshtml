@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<br />
+<br />
+<div style="color:white;">
+    <table style="border-collapse: separate; border-spacing: 15px; text-align:center; margin-left:auto; margin-right:auto; ">
+        <tr>
+            <td>
+                <img src="~/Images/ambu.png" height="65" width="65" />
+                <br /> 
+                <a href="~/Views/Home/Listado.cshtml" style="color: white;">Emergencias</a>
+            </td>
+            <td style="text-align:center;">
+                <img src="~/Images/veterinario.png" height="65" width="65" onclick="location.href='@Url.Action("Listado", "Home", new { sTipo = "V" })'" />
+                <br />
+                <input type="submit" value="Veterinarios" class="btn btn-link" style="color:white; text-align:center;" onclick="location.href='@Url.Action("Listado", "Home", new { sTipo = "V" })'" />
+            </td>
+            <td>
+                <img src="~/Images/store.png" height="65" width="65" />
+                <br />
+                      <input type="submit" value="Tiendas" class="btn btn-link" style="color:white; text-align:center;" onclick="location.href='@Url.Action("Listado", "Home", new { sTipo = "V" })'" />
+            </td>
+            <td>
+                <img src="~/Images/varios.png" height="65" width="65" />
+                <br />
+                <input type="submit" value="Diversos" class="btn btn-link" style="color:white; text-align:center;" onclick="location.href='@Url.Action("Listado", "Home", new { sTipo = "V" })'" />
+            </td>
+        </tr>
+    </table>
+</div>
+

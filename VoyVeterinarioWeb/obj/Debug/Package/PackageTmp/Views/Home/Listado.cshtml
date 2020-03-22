@@ -1,0 +1,47 @@
+﻿@model IEnumerable<VoyVeterinarioWeb.Models.Directorio>
+
+@{
+    ViewBag.Title = "Listado";
+}
+
+<h2>Veterinarios</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            Información
+        </th>
+        <th>
+            Dirección
+        </th>
+        <th>
+            Contacto
+        </th>
+    </tr>
+
+    @foreach (var item in Model) {
+    <tr>
+        <td>
+
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.InfoGeneral)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Direccion) <br />
+            @Html.DisplayFor(modelItem => item.Colonia) - @Html.DisplayFor(modelItem => item.DelMun) <br />
+            CP: @Html.DisplayFor(modelItem => item.CP) -  @Html.DisplayFor(modelItem => item.Estado) <br />
+        </td>
+        <td>
+            Telefono: @Html.DisplayFor(modelItem => item.Telefonos) <br />
+            Correo: @Html.DisplayFor(modelItem => item.Correo) <br />
+            Facebook: @Html.DisplayFor(modelItem => item.RedesSociales) <br />
+        </td>
+    </tr>
+    }
+</table>
